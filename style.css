@@ -1,0 +1,412 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b14;
+    color: white;
+}
+
+/* NAVIGATION */
+header {
+    background: #141421;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #29283b;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #8065ff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #8065ff;
+}
+
+/* BOUTONS */
+.btn {
+    display: inline-block;
+    background: #8065ff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #6246e8;
+    transform: translateY(-3px);
+}
+
+/* ACCUEIL */
+.hero {
+    min-height: 550px;
+    padding: 90px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    color: #a18cff;
+    background: #8065ff22;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 30px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    display: block;
+    color: #8065ff;
+}
+
+.hero p {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.hero-image {
+    width: 350px;
+    height: 350px;
+    min-width: 250px;
+    background: radial-gradient(circle, #8065ff55, #141421);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    font-size: 100px;
+}
+
+/* STATISTIQUES */
+.stats {
+    background: #141421;
+    padding: 40px 8%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.stats h2 {
+    color: #a18cff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    color: #aaa;
+}
+
+/* TITRES */
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title span,
+.about-content > span {
+    color: #a18cff;
+    font-weight: bold;
+}
+
+.section-title h2,
+.about-content h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: #aaa;
+}
+
+/* FORMATIONS */
+.formations,
+.advantages,
+.testimonials {
+    padding: 90px 8%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: #141421;
+    padding: 30px;
+    border: 1px solid #29283b;
+    border-radius: 15px;
+    width: 300px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #8065ff;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #a18cff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* À PROPOS */
+.about {
+    padding: 90px 8%;
+    background: #141421;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-image {
+    width: 40%;
+    min-height: 300px;
+    background: linear-gradient(135deg, #8065ff55, #27203e);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-icon {
+    font-size: 100px;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content p {
+    color: #aaa;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.about-content ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.about-content li {
+    margin: 15px 0;
+    color: #ddd;
+}
+
+/* AVIS */
+.stars {
+    color: #ffc857;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card small {
+    color: #888;
+}
+
+/* CONTACT */
+.contact {
+    padding: 90px 20px;
+    background: #141421;
+}
+
+form {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select,
+textarea {
+    background: #0b0b14;
+    color: white;
+    border: 1px solid #29283b;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #8065ff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #090910;
+    padding: 45px 20px;
+}
+
+footer p {
+    color: #888;
+    margin: 15px 0;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #aaa;
+    margin: 10px;
+}
+
+.footer-links a:hover {
+    color: #8065ff;
+}
+
+.copyright {
+    border-top: 1px solid #29283b;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 4%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .section-title h2,
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .formations,
+    .advantages,
+    .testimonials {
+        padding: 60px 20px;
+    }
+}
